@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: readyhat-gitops-demo
+  # annotations:
+  #   openshift.io/description: A service mesh control plane for the gif2stream and stream2gif projects.
+  #   openshift.io/display-name: Red Hat OpenShift Service Mesh

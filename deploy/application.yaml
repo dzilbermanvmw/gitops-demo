@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: readyhat-gitops-demo
+  namespace: readyhat-gitops-demo
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io/foreground
+spec:
+  destination:
+    namespace: readyhat-gitops-demo
+    server: 'https://kubernetes.default.svc'
+  # project: readyhat-gifstream
+  project: default
+  source:
+    path: deploy
+    # repoURL: 'https://github.com/readyhat/gif2stream.git'
+    repoURL: 'https://github.com/readyhat/gitops-demo-cicd.git'
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

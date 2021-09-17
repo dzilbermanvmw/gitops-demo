@@ -1,0 +1,1 @@
+The repo for storing deployment of GitHub OAuth to the cluster with ArgoCD and an instance of the App scoped ArgoCD.
