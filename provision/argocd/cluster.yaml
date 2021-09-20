@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: ArgoCD
 metadata:
   name: gitops-demo
-  namespace: gitops-demo
+  namespace: readyhat-gitops-demo
   labels:
     app: gitops-demo
 spec:
