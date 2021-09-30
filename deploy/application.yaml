@@ -7,7 +7,8 @@ metadata:
     - resources-finalizer.argocd.argoproj.io/foreground
 spec:
   destination:
-    namespace: readyhat-gitops-demo
+  # can be different namespace but need to match one that is created by DevOps engineer in OCP UI
+    namespace: gitops-demo
     server: 'https://kubernetes.default.svc'
   # project: readyhat-gifstream
   project: default
