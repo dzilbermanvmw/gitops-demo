@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: readyhat-gitops-demo
-  namespace: readyhat-gitops-demo
+  namespace: gitops-demo
   finalizers:
     - resources-finalizer.argocd.argoproj.io/foreground
 spec:
