@@ -15,7 +15,8 @@ spec:
   source:
     path: deploy
     # repoURL: 'https://github.com/readyhat/gif2stream.git'
-    repoURL: 'https://github.com/readyhat/gitops-demo-cicd.git'
+    # repoURL: 'https://github.com/readyhat/gitops-demo-cicd.git'
+    repoURL: 'https://github.com/dzilbermanvmw/gitops-demo.git'
     targetRevision: HEAD
   syncPolicy:
     automated:
