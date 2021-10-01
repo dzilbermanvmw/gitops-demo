@@ -1,10 +1,10 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ArgoCD
 metadata:
-  name: gitops-demo
-  namespace: readyhat-gitops-demo
+  name: gitops-demo-new
+  namespace: gitops-demo-new
   labels:
-    app: gitops-demo
+    app: gitops-demo-new
 spec:
   server:
     autoscale:
