@@ -24,7 +24,7 @@ spec:
       - name: sailsjs-gitops
         imagePullPolicy: Always
         # change :v1 tags to see image changing
-        image: quay.io/readyhat/gitops-demo:v3
+        image: quay.io/readyhat/gitops-demo:v1
         livenessProbe:
           failureThreshold: 3
           httpGet:
